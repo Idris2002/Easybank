@@ -1,0 +1,47 @@
+footer {
+    background-color: hsl(233, 26%, 24%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+
+    .logo {
+        path {
+            fill: #fff;
+        }
+    }
+
+    .media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        svg {
+            width: 100%;
+        }
+    }
+
+    .extra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .invite {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+        color: #fff;
+        border-radius: 100px;
+    }
+
+    p {
+
+    }
+}
