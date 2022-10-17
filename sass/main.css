@@ -25,7 +25,19 @@ ul {
   list-style: none;
 }
 
-header {
+@media screen and (min-width: 768px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    z-index: 6;
+    position: absolute;
+    width: 99vw;
+  }
+}
+
+.header__brand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +53,79 @@ header {
   gap: 2rem;
   z-index: 1;
   position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .header__brand {
+    width: auto;
+    position: relative;
+    background-color: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hambuger,
+  #close-menu {
+    display: none;
+  }
+}
+
+nav {
+  color: #2d314d;
+  background-color: blue;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  position: absolute;
+  top: 4.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  z-index: 3;
+  display: none;
+  opacity: 0;
+  -webkit-transition: display 0.1s ease, opacity 0.5s linear 0.3s;
+  transition: display 0.1s ease, opacity 0.5s linear 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    background: none;
+    margin: 0;
+    margin-left: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    display: block;
+    opacity: 1;
+  }
+}
+
+.hide-icon {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+  opacity: 1;
+}
+
+.nav-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  display: block;
 }
 
 .hero {
