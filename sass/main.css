@@ -48,17 +48,41 @@ header {
   position: relative;
 }
 
-.hero__bg {
+@media screen and (min-width: 720px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 100vh;
+  }
+}
+
+.hero__bgm {
   width: 100vw;
 }
 
-.hero__mockup {
-  position: absolute;
-  top: -11rem;
-  left: 0;
-  width: 100%;
-  height: 70%;
-  margin-bottom: 5rem;
+@media screen and (min-width: 720px) {
+  .hero__bgm {
+    display: none;
+  }
+}
+
+@media screen and (width: 720px) {
+  .hero__mockup {
+    display: inline-block;
+    top: 0;
+    right: 0;
+  }
 }
 
 .hero__desc {

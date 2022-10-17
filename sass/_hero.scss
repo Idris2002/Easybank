@@ -2,17 +2,38 @@
     height: 100%;
     position: relative;
 
-    &__bg {
+    @media screen and (min-width: 720px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 100vh;
+        // position: relative;
+        // background: green;
+        // clip-path: polygon(50% 0%, 100% 47%, 100% 0);
+    }
+
+    &__bgm {
         width: 100vw;
+        
+        @media screen and (min-width: 720px) {
+           display: none;
+        }
     }
 
     &__mockup {
-        position: absolute;
-        top: -11rem;
-        left: 0;
-        width: 100%;
-        height: 70%;
-        margin-bottom: 5rem;
+        // position: absolute;
+        // top: -11rem;
+        // left: 0;
+        // width: 100%;
+        // height: 70%;
+        // margin-bottom: 5rem;
+
+        @media screen and (width: 720px) {
+            display: inline-block;
+            top: 0;
+            right: 0;
+        }
     }
 
     &__desc {
