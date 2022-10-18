@@ -16,28 +16,50 @@
   &__bgm {
     width: 100vw;
 
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
 
-  &__mockup {
-    // position: absolute;
-    // top: -11rem;
-    // left: 0;
-    // width: 100%;
-    // height: 70%;
-    // margin-bottom: 5rem;
+  &__bgd {
+    display: none;
 
-    @media screen and (width: 720px) {
-      display: inline-block;
-      top: 0;
-      right: 0;
+    @media screen and (min-width: 768px) {
+      display: block;
+      transform: translate(7rem, 25rem);
+    }
+  }
+
+  &__mockup {
+    position: absolute;
+    top: -8rem;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 5rem;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: -3rem;
+      left: 63rem;
+      width: 40%;
+      height: 60%;
+    }
+    img {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        // width: 50%;
+        // height: 100%;
+      }
     }
   }
 
   &__desc {
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+    }
     h2 {
       font-size: 3rem;
       padding: 1rem;
